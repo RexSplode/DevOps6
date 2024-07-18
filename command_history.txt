@@ -1,0 +1,80 @@
+sh-5.2$ history
+    1  echo "hello my ec2 instance!"
+    2  sudo apt-get git
+    3  sudo yum install git
+    4  sudo yum install mc
+    5  sudo yum install htop
+    6  sudo yum install nano
+    7  sudo yum install curl
+    8  sudo yum install curl --skip-broken
+    9  sudo yum install wget
+   10  sudo yum install ansible
+   11  sudo yum install nsdu
+   12  sudo yum install ncdu
+   13  sudo yum install httpd
+   14  ps
+   15  sudo systemctl start httpd
+   16  ps
+   17  sudo systemctl enable httpd
+   18  sudo yum install stress
+   19  stress -v
+   20  stress -vm 5
+   21  stress --vm 5
+   22  ps
+   23  stress --cpu 8
+   24  stress --cpu 4 &
+   25  ps
+   26  kill 27399
+   27  ps
+   28  ps | grep stress
+   29  ps | grep stress | awk '{print $1}'
+   30  kill | grep stress | awk '{print $1}'
+   31  kill 27400
+   32  kill 27401
+   33  kill 27402
+   34  kill 27403
+   35  ps
+   36  ls /dev
+   37  ls /dev/sdd
+   38  mount
+   39  mount | grep sdd
+   40  df
+   41  lsblk
+   42  file -s /dev/nvme1n1
+   43  sudo file -s /dev/nvme1n1
+   44  mkfs -t xfs /dev/nvme1n1
+   45  sudo mkfs -t xfs /dev/nvme1n1
+   46  sudo file -s /dev/nvme1n1
+   47  sudo mount /dev/nvme1n1 /dev/sdd
+   48  ls `
+
+exit
+   49  ls ~
+   50  mkdir ~/newvolume
+   51  ls ~
+   52  sudo mount /dev/nvme1n1 ~/newvolume
+   53  df -h
+   54  cd /var/log
+   55  ls
+   56  cd httpd
+   57  sudo cd httpd
+   58  ls
+   59  cd /etc
+   60  ls
+   61  ls | grep httpd
+   62  cd httpd
+   63  ls
+   64  cd logs
+   65  sudo sd logs
+   66  sudo cd logs
+   67  ls
+   68  cd logs
+   69  sudo cd logs
+   70  ls
+   71  pwd
+   72  ls -la
+   73  ls ./logs
+   74  sudo ls ./logs
+   75  sudo cat ./logs/access_log
+   76  sudo cat ./logs/error_log
+   77  history
