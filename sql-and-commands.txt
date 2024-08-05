@@ -1,0 +1,18 @@
+docker pull postgres:13
+docker images
+docker run -d --name mydb -p 5432:5432 -e POSTGRES_PASSWORD=password 0cc
+docker exec -it mydb sh
+psql --version
+su - postgres
+createuser student
+createdb itca
+psql
+alter user student with encrypted password 'qwerty';
+grant all privileges on database itca to student;
+create schema devops6;
+create table zerg (id serial primary key, name varchar (50) unique not null);
+create table protoss (id serial primary key, name varchar (50) unique not null);
+create table terran (id serial primary key, name varchar (50) unique not null);
+insert into zerg values (1, 'zergling') returning *;
+insert into protoss values (2, 'zealot') returning *;
+insert into zerg values (3, 'marine') returning *;
